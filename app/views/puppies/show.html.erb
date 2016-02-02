@@ -21,8 +21,7 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @puppy.image %>
+  <%= image_tag @puppy.avatar.url(:medium) %>
 </p>
 
 <%= link_to 'Edit', edit_puppy_path(@puppy) %> |

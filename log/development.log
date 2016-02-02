@@ -197,3 +197,563 @@ Processing by PuppiesController#index as HTML
   [1m[36mPuppy Load (0.3ms)[0m  [1mSELECT "puppies".* FROM "puppies"[0m
   Rendered puppies/index.html.erb within layouts/application (3.4ms)
 Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-02-02 13:13:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 931ms (Views: 894.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/puppies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/scaffolds.self-20d97d807d023cccbd4b7c0df2c8767c7cf745b3a61571b13d3b9da1e81ebadb.css?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/puppies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-02 13:13:57 -0500
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:14:05 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (207.0ms)
+  Rendered puppies/new.html.erb within layouts/application (237.4ms)
+Completed 200 OK in 269ms (Views: 258.4ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentAvatarToPuppies (20160202181525)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "puppies" ADD "avatar_file_name" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "puppies" ADD "avatar_content_type" varchar
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "puppies" ADD "avatar_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "puppies" ADD "avatar_updated_at" datetime
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160202181525"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:15:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (28.0ms)
+  Rendered puppies/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 343ms (Views: 319.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.self-20d97d807d023cccbd4b7c0df2c8767c7cf745b3a61571b13d3b9da1e81ebadb.css?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/puppies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/puppies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-02 13:15:47 -0500
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:24:23 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (26.9ms)
+  Rendered puppies/new.html.erb within layouts/application (28.4ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"puppies"} missing required keys: [:id]):
+    1: <%= form_for @puppy, url: puppy_path, html: {multipart: true } do |f| %>
+    2: 
+    3:   <% if @puppy.errors.any? %>
+    4:     <div id="error_explanation">
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb__2117469707409096034_70178547188660'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb___3773444715694485967_70178506441100'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (142.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (139.8ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:24:50 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (28.5ms)
+  Rendered puppies/new.html.erb within layouts/application (30.2ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007fa76a540880>:0x007fa769b94ae8>):
+    33:     <%= f.text_field :image %>
+    34:   </div>
+    35:   <div class="field">
+    36:      <%= form.file_field :avatar %>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/puppies/_form.html.erb:36:in `block in _app_views_puppies__form_html_erb__2117469707409096034_70178504585800'
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb__2117469707409096034_70178504585800'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb___3773444715694485967_70178506441100'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.1ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:25:42 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (15.8ms)
+  Rendered puppies/new.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007fa76a540880>:0x007fa76ef05128>):
+    33:     <%= f.text_field :image %>
+    34:   </div>
+    35:   <div class="field">
+    36:      <%= form.file_field :avatar %>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/puppies/_form.html.erb:36:in `block in _app_views_puppies__form_html_erb__2117469707409096034_70178504585800'
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb__2117469707409096034_70178504585800'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb___3773444715694485967_70178506441100'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.5ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:26:20 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (16.3ms)
+  Rendered puppies/new.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007fa76a540880>:0x007fa76bda5d58>):
+    33:     <%= f.text_field :image %>
+    34:   </div>
+    35:   <div class="field">
+    36:      <%= form.input :avatar, as: :file %>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/puppies/_form.html.erb:36:in `block in _app_views_puppies__form_html_erb__2117469707409096034_70178522932520'
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb__2117469707409096034_70178522932520'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb___3773444715694485967_70178506441100'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.0ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:28:42 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (17.7ms)
+  Rendered puppies/new.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007fa76e995a30>:0x007fa76e98ff90>):
+    33:     <%= f.text_field :image %>
+    34:   </div>
+    35:   <div class="field">
+    36:      <%= form.input :avatar, as: :file %>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/puppies/_form.html.erb:36:in `block in _app_views_puppies__form_html_erb__2117469707409096034_70178522932520'
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb__2117469707409096034_70178522932520'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb___3773444715694485967_70178506441100'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.9ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.9ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:30:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (52.1ms)
+  Rendered puppies/new.html.erb within layouts/application (58.3ms)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007fad32ccd8f0>:0x007fad32cc7568>):
+    33:     <%= f.text_field :image %>
+    34:   </div>
+    35:   <div class="field">
+    36:      <%= form.file_field :avatar %>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/puppies/_form.html.erb:36:in `block in _app_views_puppies__form_html_erb___2379120702724870795_70190929029400'
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb___2379120702724870795_70190929029400'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb__4354574975567867441_70190923496600'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.7ms)
+
+
+Started GET "/puppies/" for ::1 at 2016-02-02 13:30:06 -0500
+Processing by PuppiesController#index as HTML
+  [1m[35mPuppy Load (0.2ms)[0m  SELECT "puppies".* FROM "puppies"
+  Rendered puppies/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 295ms (Views: 293.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:30:08 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (50.8ms)
+  Rendered puppies/new.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007fad32ccd8f0>:0x007fad363005a8>):
+    33:     <%= f.text_field :image %>
+    34:   </div>
+    35:   <div class="field">
+    36:      <%= form.file_field :avatar %>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/puppies/_form.html.erb:36:in `block in _app_views_puppies__form_html_erb___2379120702724870795_70190951345780'
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb___2379120702724870795_70190951345780'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb__4354574975567867441_70190951333500'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.0ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:30:08 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (19.2ms)
+  Rendered puppies/new.html.erb within layouts/application (20.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007fad32ccd8f0>:0x007fad356282b8>):
+    33:     <%= f.text_field :image %>
+    34:   </div>
+    35:   <div class="field">
+    36:      <%= form.file_field :avatar %>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/puppies/_form.html.erb:36:in `block in _app_views_puppies__form_html_erb___2379120702724870795_70190929029400'
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb___2379120702724870795_70190929029400'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb__4354574975567867441_70190923496600'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.8ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.2ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.8ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:31:01 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (19.6ms)
+  Rendered puppies/new.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fad32ccd8f0>:0x007fad3147cbc0>):
+    13:   <% end %>
+    14: 
+    15:   <div class="field">
+    16:     <%= f.label :name %><br>
+    17:     <%= f.text_field :name %>
+    18:   </div>
+    19:   <div class="field">
+  app/views/puppies/_form.html.erb:16:in `block in _app_views_puppies__form_html_erb___2379120702724870795_70190925248920'
+  app/views/puppies/_form.html.erb:1:in `_app_views_puppies__form_html_erb___2379120702724870795_70190925248920'
+  app/views/puppies/new.html.erb:3:in `_app_views_puppies_new_html_erb__4354574975567867441_70190923496600'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.6ms)
+
+
+Started GET "/puppies/new" for ::1 at 2016-02-02 13:31:22 -0500
+Processing by PuppiesController#new as HTML
+  Rendered puppies/_form.html.erb (6.1ms)
+  Rendered puppies/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-20d97d807d023cccbd4b7c0df2c8767c7cf745b3a61571b13d3b9da1e81ebadb.css?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/puppies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/puppies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-02 13:31:22 -0500
+
+
+Started POST "/puppies" for ::1 at 2016-02-02 13:31:49 -0500
+Processing by PuppiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c07WyqPwAw816VXF1MrcS8vhOtq9dGC+rKkvwBpIZM67PfEL04NerGNVNsQnAl6XruZ/XBoUqMUzCvQz0+I5xg==", "puppy"=>{"name"=>"Demo", "breed"=>"Demo", "owner"=>"Demo", "votes"=>"1", "image"=>"x", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fad325a1108 @tempfile=#<Tempfile:/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/RackMultipart20160202-21987-ojrwvs.jpg>, @original_filename="bios-man4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"puppy[avatar]\"; filename=\"bios-man4.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Puppy"}
+Command :: file -b --mime '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/0753353d5f493729a88d6cdc62605a5820160202-21987-1asfoo4.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/0753353d5f493729a88d6cdc62605a5820160202-21987-1l2x9ha.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/0753353d5f493729a88d6cdc62605a5820160202-21987-1l2x9ha.jpg[0]'
+Command :: convert '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/0753353d5f493729a88d6cdc62605a5820160202-21987-1l2x9ha.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/aaf62700f90597800a44f026aa95e77f20160202-21987-l1jadq'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/0753353d5f493729a88d6cdc62605a5820160202-21987-1l2x9ha.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/0753353d5f493729a88d6cdc62605a5820160202-21987-1l2x9ha.jpg[0]'
+Command :: convert '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/0753353d5f493729a88d6cdc62605a5820160202-21987-1l2x9ha.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/aaf62700f90597800a44f026aa95e77f20160202-21987-1wc87qt'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/53/2wsxpftj2tjgk6jr3vzpj03c0000gn/T/0753353d5f493729a88d6cdc62605a5820160202-21987-cb199r.jpg'
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "puppies" ("name", "breed", "owner", "votes", "image", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Demo"], ["breed", "Demo"], ["owner", "Demo"], ["votes", 1], ["image", "x"], ["avatar_file_name", "bios-man4.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 220310], ["avatar_updated_at", "2016-02-02 18:31:49.431438"], ["created_at", "2016-02-02 18:31:50.196980"], ["updated_at", "2016-02-02 18:31:50.196980"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/puppies/1
+Completed 302 Found in 799ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/puppies/1" for ::1 at 2016-02-02 13:31:50 -0500
+Processing by PuppiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPuppy Load (0.4ms)[0m  SELECT  "puppies".* FROM "puppies" WHERE "puppies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered puppies/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 66ms (Views: 25.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/puppies/1" for ::1 at 2016-02-02 13:32:41 -0500
+Processing by PuppiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPuppy Load (0.1ms)[0m  [1mSELECT  "puppies".* FROM "puppies" WHERE "puppies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered puppies/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `avatar' for nil:NilClass):
+    21: </p>
+    22: 
+    23: <p>
+    24:   <%= image_tag @user.avatar.url(:medium) %>
+    25: </p>
+    26: 
+    27: <%= link_to 'Edit', edit_puppy_path(@puppy) %> |
+  app/views/puppies/show.html.erb:24:in `_app_views_puppies_show_html_erb__3339752270944739505_70190950318700'
+
+
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.7ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.2ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/robert/.rvm/gems/ruby-2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.8ms)
+
+
+Started GET "/puppies/1" for ::1 at 2016-02-02 13:32:51 -0500
+Processing by PuppiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPuppy Load (0.2ms)[0m  SELECT  "puppies".* FROM "puppies" WHERE "puppies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered puppies/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/puppies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/scaffolds.self-20d97d807d023cccbd4b7c0df2c8767c7cf745b3a61571b13d3b9da1e81ebadb.css?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/puppies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-02 13:32:51 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-02 13:32:51 -0500

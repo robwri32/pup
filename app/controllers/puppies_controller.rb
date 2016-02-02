@@ -69,6 +69,6 @@ class PuppiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def puppy_params
-      params.require(:puppy).permit(:name, :breed, :owner, :votes, :image)
+      params.require(:puppy).permit(:name, :breed, :owner, :votes, :image,:avatar)
     end
 end

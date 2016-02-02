@@ -1,4 +1,5 @@
-<%= form_for(@puppy) do |f| %>
+<%= form_for @puppy, url: puppies_path, html: {multipart: true } do |f| %>
+
   <% if @puppy.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@puppy.errors.count, "error") %> prohibited this puppy from being saved:</h2>
@@ -30,6 +31,9 @@
   <div class="field">
     <%= f.label :image %><br>
     <%= f.text_field :image %>
+  </div>
+  <div class="field">
+     <%= f.file_field :avatar %>
   </div>
   <div class="actions">
     <%= f.submit %>
