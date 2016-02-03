@@ -20,13 +20,9 @@
         <td><%= puppy.name %></td>
         <td><%= puppy.breed %></td>
         <td><%= puppy.owner %></td>
-        <td>
-          <%= link_to like_puppy_path(puppy), class: "like", method: :put do %>
- <button type="button" class="btn btn-info" aria-label="Left Align">
-   <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
-   <span class="badge"><%= puppy.get_upvotes.size %></span>
- </button>
-<% end %>
+        <td><%= puppy.avatar %>
+
+
 
         </td>
 

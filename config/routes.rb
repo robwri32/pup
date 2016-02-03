@@ -4,10 +4,9 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :puppies do
-  member do
-    put "like", to: "puppies#upvote"
-    put 'unlike', to: "puppies#downvote"
-  end
+    member do
+        get "upvote"
+      end
 end
 
 
