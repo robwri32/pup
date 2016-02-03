@@ -20,8 +20,17 @@
         <td><%= puppy.name %></td>
         <td><%= puppy.breed %></td>
         <td><%= puppy.owner %></td>
-        <td><%= puppy.votes %></td>
-        <td><%= puppy.image %></td>
+        <td>
+          <%= link_to like_puppy_path(puppy), class: "like", method: :put do %>
+ <button type="button" class="btn btn-info" aria-label="Left Align">
+   <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
+   <span class="badge"><%= puppy.get_upvotes.size %></span>
+ </button>
+<% end %>
+
+        </td>
+
+        <td><%= image_tag puppy.avatar.url(:thumb) %></td>
         <td><%= link_to 'Show', puppy %></td>
         <td><%= link_to 'Edit', edit_puppy_path(puppy) %></td>
         <td><%= link_to 'Destroy', puppy, method: :delete, data: { confirm: 'Are you sure?' } %></td>

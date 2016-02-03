@@ -21,6 +21,18 @@ class PuppiesController < ApplicationController
   def edit
   end
 
+  def upvote
+  @puppy = Puppy.find(params[:id])
+  @puppy.upvote_by current_user
+  redirect_to puppies_path
+end
+
+  def downvote
+  @puppy = Puppy.find(params[:id])
+  @puppy.downvote_by current_user
+  redirect_to puppies_path
+end
+
   # POST /puppies
   # POST /puppies.json
   def create
