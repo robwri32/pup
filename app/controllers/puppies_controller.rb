@@ -28,6 +28,8 @@ class PuppiesController < ApplicationController
 end
 
 
+
+
   # POST /puppies
   # POST /puppies.json
   def create

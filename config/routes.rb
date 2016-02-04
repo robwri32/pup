@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  resources :puppies
+  resources :puppies do
+  member do
+    post 'upvote'
+  end
+end
   devise_for :users
   root 'welcome#index'
 
-  resources :puppies do
-    member do
-        get "upvote"
-      end
-end
+
 
 
 
